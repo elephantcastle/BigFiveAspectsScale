@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <h1>{{ $t("general.title") }}</h1>
+    <h1>{{ $t("general.title") }} index</h1>
   </v-container>
 </template>
 
