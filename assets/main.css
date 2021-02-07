@@ -1,6 +1,5 @@
 #__nuxt {
   background: #fafafa;
-  font-family: "Krub", sans-serif !important;
   -webkit-user-select: none;
   -khtml-user-select: none;
   -moz-user-select: none;
@@ -10,9 +9,70 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
+.v-application{
+  font-family: "Krub", sans-serif !important;
+  font-style: normal;
+  font-weight: 400;
+}
+.middlealign {
+  width: 95%;
+  margin: 0 auto;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text-container {
+  text-align: justify;
+  text-justify: inter-word;
+  font-size: 1rem;
+}
 .v-toolbar__content, .v-toolbar__extension{
   padding: 4px 0px!important;
 }
+
+@font-face {
+  font-family: 'Krub';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Krub-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Krub';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('~assets/fonts/Krub-Italic.ttf') format('truetype');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+  .middlealign {
+    width: 65%!important;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+/* ICONS */
+
 .menu-icon {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMgMThoMTh2LTJIM3Yyem0wLTVoMTh2LTJIM3Yyem0wLTd2MmgxOFY2SDN6Ii8+PC9zdmc+");
   background-position: center center;

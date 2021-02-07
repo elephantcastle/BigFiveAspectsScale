@@ -57,9 +57,12 @@ module.exports = {
     }
   },
   buildModules: [
-    // Simple usage
     '@nuxtjs/vuetify'
   ],
+  vuetify: {
+    defaultAssets:{ font: false, icons: false},
+    treeShake: true
+  },
   /*
   ** Customize the progress bar color
   */
