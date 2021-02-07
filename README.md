@@ -1,4 +1,4 @@
-# Bigfiveaspects
+# BigfiveAspectsScale
 
 > Nuxt.js project
 
