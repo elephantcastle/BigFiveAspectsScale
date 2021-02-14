@@ -16,11 +16,8 @@ export const mutations = {
   },
   setSex(state, sex) {
     state.sex = sex;
-  }
-};
-
-export const actions = {
+  },
   calculateResults(state) {
-    this.state.graphData = getGraphData(state.results)
+    state.graphData = getGraphData(state.results)
   }
 };

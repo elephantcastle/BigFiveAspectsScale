@@ -63,6 +63,10 @@ module.exports = {
     defaultAssets:{ font: false, icons: false},
     treeShake: true
   },
+  plugins: [
+    { src: '~/plugins/apexcharts.js', mode: 'client' },
+
+  ],
   /*
   ** Customize the progress bar color
   */
@@ -79,6 +83,7 @@ module.exports = {
     /*
     ** Run ESLint on save
     */
+   transpile: ['vue-apexcharts'],
     extend (config, { isDev, isClient }) {
       if (isDev && isClient) {
         config.module.rules.push({
