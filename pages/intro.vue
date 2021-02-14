@@ -78,12 +78,6 @@
         outlined
         type="number"
       ></v-text-field>
-      <v-checkbox
-        v-model="checkbox"
-        :rules="checkboxRules"
-        label="I understand the general purpose of this test"
-        required
-      ></v-checkbox>
 
       <v-btn class="mr-4" @click="submit"> submit </v-btn>
       <v-btn @click="clear"> clear </v-btn>
@@ -92,6 +86,7 @@
 </template>
 
 <script>
+import { mapMutations } from 'vuex';
 export default {
   metaInfo: {
     title: "Test - The Big Five Aspects Scale",
@@ -116,13 +111,15 @@ export default {
       (v) => (v && v < 95) || "Age must be less than 95",
       (v) => (v && v > 10) || "Age must be more than 10",
     ],
-    checkboxRules: [(v) => !!v || "You must agree to continue!"],
   }),
 
   methods: {
+    ...mapMutations(['setSex', 'setAge']),
     submit() {
       if (this.$refs.form.validate()) {
         if (this.$route.path != "/test") {
+          this.setSex(this.sex)
+          this.setAge(this.age)
           this.$router.push({ path: `/test` });
         }
       }
