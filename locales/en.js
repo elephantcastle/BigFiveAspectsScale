@@ -112,5 +112,19 @@ export default {
     "Hold back my opinions.",
     "Am out for my own personal gain.",
     "Am not embarrassed easily."
-  ]
+  ],
+  traits: {
+    A: "Agreeableness",
+    C: "Conscientiousness",
+    E: "Extraversion",
+    N: "Neuroticism",
+    O: "Openness to experience"
+  },
+  aspects: {
+    o: ["Intellect", "Openness"],
+    c: ["Industriousness", "Orderliness"],
+    e: ["Enthusiasm", "Assertiveness"],
+    a: ["Compassion", "Politeness"],
+    n: ["Volatility", "Withdrawal"]
+  }
 };

@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import { mapMutations, mapActions } from "vuex";
+import { mapMutations } from "vuex";
 
 export default {
   name: "test",
@@ -35,11 +35,11 @@ export default {
     },
   },
   methods: {
-    ...mapMutations(["updateAnswer"]),
-    ...mapActions(["calculateResults"]),
+    ...mapMutations(["updateAnswer", "calculateResults"]),
     setAnswer(value) {
       if (this.index === 100) {
         this.calculateResults();
+        this.$router.push({ path: `/results` });
       } else {
         this.updateAnswer([this.index, value]);
         this.index++;
