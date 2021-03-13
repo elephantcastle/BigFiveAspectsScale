@@ -50,6 +50,12 @@ module.exports = {
     }]
   ],
 
+  router: {
+    extendRoutes(routes) {
+      routes[routes.length - 1].name = "home"
+    }
+  },
+
   watchers: {
     webpack: {
       aggregateTimeout: 300,
