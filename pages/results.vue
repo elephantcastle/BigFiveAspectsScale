@@ -1,19 +1,18 @@
 <template>
   <v-container>
-    <h1>Your Five Aspects Scale personality</h1>
+    <h1 class="title-chart">Your Five Aspects Scale personality</h1>
     <apexchart
-      width="500"
-      type="bar"
+      class="primary-chart"
       :options="traitOptions"
       :series="[{ name: 'ocean-breakdown', data: graphData.traits }]"
     />
 
-    <h3>Trait Breakdown</h3>
-    <h5>Each individual trait can be further breakdown in 2 major Aspects</h5>
+    <h2 class="title-chart">Trait Breakdown</h2>
+    <h4 class="title-chart">Each individual trait can be further breakdown in 2 major Aspects</h4>
     <div v-for="trait in ['o', 'c', 'e', 'a', 'n']" :key="trait">
+      <h3 class="title-chart">{{ $t(`traits.${trait.toUpperCase()}`) }}</h3>
       <apexchart
-        width="500"
-        type="bar"
+        class="secondary-chart"
         :options="aspectOptions(trait)"
         :series="[
           { name: 'ocean-breakdown', data: graphData.groupedFacets[trait] },
@@ -41,6 +40,11 @@ export default {
         },
       },
       options: {
+        chart: {
+          width: "75%",
+          height: "100%",
+          type: "bar"
+        },
         legend: {
           show: false,
         },
@@ -50,9 +54,20 @@ export default {
           },
         },
         xaxis: {},
+        yaxis: {min:0, max:100},
         fill: {
           colors: ["#008FFB", "#00E396", "#FEB019", "#FF4560", "#775DD0"],
         },
+        responsive: [
+          {
+            breakpoint: 750,
+            options: {
+              chart: {
+                height: 450,
+              }
+            }
+          }
+        ]
       },
     };
   },
@@ -79,6 +94,20 @@ export default {
 </script>
 
 <style>
+.title-chart{
+  margin: 20px auto;
+  text-align: center;
+}
+.primary-chart > div{
+  margin: 0 auto;
+}
+.secondary-chart{
+  max-width: 850px;
+  margin: 0 auto;
+}
+.secondary-chart>div{ 
+  margin: 0 auto;
+} 
 </style>
 
 
