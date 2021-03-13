@@ -41,7 +41,7 @@ export default {
         this.calculateResults();
         this.$router.push({ path: `/results` });
       } else {
-        this.updateAnswer([this.index, value]);
+        this.updateAnswer([this.index, value + 1]);
         this.index++;
       }
     }
