@@ -21,3 +21,12 @@ export const mutations = {
     state.graphData = getGraphData(state.results)
   }
 };
+
+export const getters = {
+  getAge(state){
+    return state.age
+  },
+  getSex(state){
+    return state.sex
+  }
+};
