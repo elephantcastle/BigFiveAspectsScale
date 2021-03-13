@@ -1,4 +1,4 @@
-#__nuxt {
+#app {
   background: #fafafa;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -54,13 +54,24 @@
 
 
 /* MEDIA QUERIES */
-
+.container-main-options {
+  margin: 20px!important;
+}
+.button-style{
+  display: flex!important;
+  margin: 0 auto;
+}
 @media only screen and (min-width: 600px) {
   .middlealign {
     width: 65%!important;
     margin: 0 auto;
     margin-top: 30px;
     margin-bottom: 30px;
+  }
+  .button-style{
+    display: flex!important;
+    margin: 60px auto;
+    max-width: 250px;
   }
 }
 

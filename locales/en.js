@@ -1,8 +1,9 @@
 export default {
   language: "english",
   general: {
-    title: "website english",
-    retrievereport: "See your report"
+    title: "The BIG FIVE ASPECTS SCALE PERSONALITY TEST",
+    retrievereport: "See your report",
+    subtitle: "Measure your Openness to Experience, Conscientiousness, Extraversion, Agreeableness, Neuroticism"
   },
   answers: [
     "Very Inaccurate",
