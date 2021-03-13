@@ -1,6 +1,6 @@
 <template>
   <div class="middlealign text-container">
-    <h1>Privacy Policy</h1>
+    <h1>{{ $t("general.policy") }}</h1>
     <p><i>Part</i> of the information you share on our website is stored and used.</p>
     <p>In particular:</p>
     <ul>

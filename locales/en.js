@@ -3,7 +3,9 @@ export default {
   general: {
     title: "The BIG FIVE ASPECTS SCALE PERSONALITY TEST",
     retrievereport: "See your report",
-    subtitle: "Measure your Openness to Experience, Conscientiousness, Extraversion, Agreeableness, Neuroticism"
+    subtitle: "Measure your Openness to Experience, Conscientiousness, Extraversion, Agreeableness, Neuroticism",
+    about: "About",
+    policy: "Privacy Policy"
   },
   answers: [
     "Very Inaccurate",
