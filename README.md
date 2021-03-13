@@ -2,22 +2,53 @@
 
 > Nuxt.js project
 
-## Build Setup
+Project to calculate the Big Five Aspects Scale
 
-``` bash
-# install dependencies
-$ npm install # Or yarn install
+Tests and evaluation is gathered from [researchgate.net](https://www.researchgate.net/publication/241696020_Openness_to_Experience_Intellect_and_Cognitive_Ability).
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+This app is written using [Nuxt](https://nuxtjs.org) as framework.
 
-# build for production and launch server
-$ npm run build
-$ npm start
+## Preview
+CURRENTLY DEPLOYED AT: https://big-five-aspects-scale.vercel.app
+## Installation
 
-# generate static project
-$ npm run generate
+Download and install [Nuxt](https://nuxtjs.org),
+For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+[git](https://git-scm.com/downloads)
+
+## Development
+
+Run the setup script to install all dependencies
+
+```
+npm install
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+### Compiles and hot-reloads for development
 
+```
+npm run dev
+```
+
+### Run your unit tests
+
+```
+TODO
+```
+
+### build for production and launch server
+
+```
+$ npm run build
+$ npm start
+```
+### generate static project
+
+```
+$ npm run generate
+```
+## License
+
+[MIT](LICENSE)
+
+## About
