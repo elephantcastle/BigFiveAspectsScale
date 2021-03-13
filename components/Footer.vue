@@ -5,7 +5,7 @@
 
       <v-card-text>
         {{ new Date().getFullYear() }} —
-        <strong>Website title</strong>
+        <strong>{{$t("general.title")}}</strong>
       </v-card-text>
     </v-card>
   </v-footer>
