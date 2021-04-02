@@ -63,7 +63,7 @@
   margin: 0 auto;
 }
 .v-application ul, .v-application ol{
-  padding-left: 10px;
+  padding-left: 10px!important;
 }
 @media only screen and (min-width: 600px) {
   .middlealign {
@@ -78,7 +78,7 @@
     max-width: 250px;
   }
   .v-application ul, .v-application ol{
-    padding-left: 24px;
+    padding-left: 24px!important;
   }
 }
 
