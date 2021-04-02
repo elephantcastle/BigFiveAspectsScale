@@ -96,25 +96,23 @@ export const getGraphData = results => {
   resultDictionary["traits"].forEach((result, index) => {
     normalDictionary["traits"][index] =
       Math.round(
-        100 *
           100 *
           GetZPercent(
             (result / 20 - normalData["traits"][index].mean) /
               normalData["traits"][index].SD
           )
-      ) / 100;
+      );
   });
   for (let trait in resultDictionary["groupedFacets"]) {
     resultDictionary["groupedFacets"][trait].forEach((result, index) => {
       normalDictionary["groupedFacets"][trait][index] =
         Math.round(
-          100 *
             100 *
             GetZPercent(
               (result / 10 - normalData["groupedFacets"][trait][index].mean) /
                 normalData["groupedFacets"][trait][index].SD
             )
-        ) / 100;
+        );
     });
   }
   return normalDictionary;
