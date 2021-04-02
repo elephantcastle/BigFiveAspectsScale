@@ -23,22 +23,12 @@
 </template>
 
 <script>
-// import { mapState } from "vuex";
+import { mapState } from "vuex";
 
 export default {
   name: "results",
   data() {
     return {
-      graphData: {
-        traits: [57, 56, 53, 63, 59],
-        groupedFacets: {
-          o: [26, 31],
-          c: [28, 28],
-          e: [26, 27],
-          a: [30, 33],
-          n: [28, 31],
-        },
-      },
       options: {
         chart: {
           width: "75%",
@@ -73,7 +63,7 @@ export default {
   },
   created() {},
   computed: {
-    // ...mapState(['graphData']),
+    ...mapState(['graphData']),
     traitOptions() {
       const options = JSON.parse(JSON.stringify(this.options));
       let traits = this.$t("traits");
