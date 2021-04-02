@@ -30,6 +30,7 @@
   padding: 4px 0px!important;
 }
 
+/* Fonts */
 @font-face {
   font-family: 'Krub';
   font-style: normal;
@@ -61,6 +62,9 @@
   display: flex!important;
   margin: 0 auto;
 }
+.v-application ul, .v-application ol{
+  padding-left: 10px;
+}
 @media only screen and (min-width: 600px) {
   .middlealign {
     width: 65%!important;
@@ -73,12 +77,14 @@
     margin: 60px auto;
     max-width: 250px;
   }
+  .v-application ul, .v-application ol{
+    padding-left: 24px;
+  }
 }
 
 
 
 /* ICONS */
-
 .menu-icon {
   background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMCAwaDI0djI0SDB6IiBmaWxsPSJub25lIi8+PHBhdGggZD0iTTMgMThoMTh2LTJIM3Yyem0wLTVoMTh2LTJIM3Yyem0wLTd2MmgxOFY2SDN6Ii8+PC9zdmc+");
   background-position: center center;

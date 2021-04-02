@@ -57,10 +57,18 @@ export default {
   border-radius: 10px;
 }
 .answers {
-  margin: 20px 70px;
+  margin: 20px;
   padding: 15px;
   font-size: 20px;
   border-radius: 10px;
+}
+@media only screen and (min-width: 600px) {
+  .answers {
+    margin: 20px 70px;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+  }
 }
 </style>
 
