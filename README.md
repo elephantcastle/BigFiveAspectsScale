@@ -2,7 +2,7 @@
 
 > Nuxt.js project
 
-Project to calculate the Big Five Aspects Scale
+Project to calculate the Big Five Aspects Scale based on Jordan Peterson, Colin DeYoung, Lena Quilty, Jeremy Gray's research.
 
 Tests and evaluation is gathered from [researchgate.net](https://www.researchgate.net/publication/241696020_Openness_to_Experience_Intellect_and_Cognitive_Ability).
 
