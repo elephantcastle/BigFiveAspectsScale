@@ -37,7 +37,7 @@ export default {
   methods: {
     ...mapMutations(["updateAnswer", "calculateResults"]),
     setAnswer(value) {
-      if (this.index === 100) {
+      if (this.index === 99) {
         this.calculateResults();
         this.$router.push({ path: `/results` });
       } else {
