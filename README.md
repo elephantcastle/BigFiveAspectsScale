@@ -9,7 +9,7 @@ Tests and evaluation is gathered from [researchgate.net](https://www.researchgat
 This app is written using [Nuxt](https://nuxtjs.org) as framework.
 
 ## Preview
-CURRENTLY DEPLOYED AT: https://big-five-aspects-scale.vercel.app
+CURRENTLY DEPLOYED AT: https://bigfiveaspects.com
 ## Installation
 
 Download and install [Nuxt](https://nuxtjs.org),
