@@ -21,7 +21,7 @@ export const mutations = {
     state._id = id;
   },
   setResults(state, results){
-    state.results = Json.parse(Json.stringify(results));
+    state.results = JSON.parse(JSON.stringify(results));
   },
   calculateResults(state) {
     state.graphData = getGraphData(state.results)
