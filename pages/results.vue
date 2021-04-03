@@ -1,6 +1,7 @@
 <template>
   <v-container>
     <h1 class="title-chart">Your Five Aspects Scale personality</h1>
+    <h1 class="text-center id-text">Save this id to retrieve this report in the future: <b>{{_id}}</b></h1>
     <apexchart
       class="primary-chart"
       :options="traitOptions"
@@ -38,7 +39,7 @@ export default {
     };
   },
   computed: {
-    ...mapState(["graphData"]),
+    ...mapState(["graphData", "_id"]),
     traitOptions() {
       const options = JSON.parse(JSON.stringify(this.options));
       let traits = this.$t("traits");
@@ -60,7 +61,7 @@ export default {
 
 <style>
 .title-chart {
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
 }
 .primary-chart > div {
@@ -72,6 +73,11 @@ export default {
 }
 .secondary-chart > div {
   margin: 0 auto;
+}
+.id-text {
+  font-size: 18px;
+  margin: 10px 0 0px 0;
+  user-select: text;
 }
 </style>
 

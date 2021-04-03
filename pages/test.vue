@@ -68,7 +68,7 @@ export default {
           axios
             .post(`${API}/results`, payload)
             .then((response) => {
-              this.setId(response._id)
+              this.setId(response.data)
               this.calculateResults();
               this.$router.push({ path: `/results` });
             })
