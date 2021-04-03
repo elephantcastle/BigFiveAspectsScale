@@ -14,7 +14,7 @@
     </div>
 
     <v-spacer></v-spacer>
-    <v-btn class="hidden-sm-and-down" text to="/results">
+    <v-btn class="hidden-sm-and-down" text to="/retrieve">
       {{ $t("general.retrievereport") }}
     </v-btn>
     <LanguageMenu />
