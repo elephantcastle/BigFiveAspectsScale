@@ -46,7 +46,7 @@ export default {
     },
   },
   methods: {
-    ...mapMutations(["updateAnswer", "calculateResults"]),
+    ...mapMutations(["updateAnswer", "calculateResults", "setId"]),
     setAnswer(value) {
       if(this.index<100){
         this.updateAnswer([this.index, value + 1]);
@@ -68,6 +68,7 @@ export default {
           axios
             .post(`${API}/results`, payload)
             .then((response) => {
+              this.setId(response._id)
               this.calculateResults();
               this.$router.push({ path: `/results` });
             })
