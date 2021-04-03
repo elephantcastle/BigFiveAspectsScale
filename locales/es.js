@@ -4,7 +4,8 @@ export default {
     title: "Los cinco grandes rasgos de personalidad",
     retrievereport: "Ver sus resultados",
     subtitle: "Mide el tuyo Apertura a las nuevas experiencias, Responsabilidad, Extroversión, Amabilidad, Inestabilidad emocional",
-    about: "About",
+    about: "Acerca de",
+    policy: "Intimidad",
     enteridtext: "Si puede ver los resultados aquí escribiendo la identificación que obtuvo (es decir 5febaa2cc9b7b116872e0cf2)"
   },
   answers: [
@@ -116,6 +117,13 @@ export default {
     "Am out for my own personal gain.",
     "Am not embarrassed easily."
   ],
+  traits: {
+    A: "Amabilidad",
+    C: "Responsabilidad",
+    E: "Extroversión",
+    N: "Inestabilidad emocional",
+    O: "Apertura a las nuevas experiencias"
+  },
   aspects: {
     o: ["Intellect", "Openness"],
     c: ["Industriousness", "Orderliness"],

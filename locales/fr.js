@@ -4,7 +4,8 @@ export default {
     title: "Les cinq grands aspects de personnalité",
     retrievereport: "Voir vos résultats",
     subtitle: "Mesurez les vôtre Ouverture à l'expérience, Conscienciosité, Extraversion, Agréabilité, Névrosisme",
-    about: "About",
+    about: "Sur",
+    policy: "Intimité",
     enteridtext: "Vous pouvez voir les résultats ici en tapant l'identifiant que vous avez obtenu,  (c'est-à-dire 5febaa2cc9b7b116872e0cf2) dans le champ de saisie ID"
   },
   answers: [
@@ -116,6 +117,13 @@ export default {
     "Am out for my own personal gain.",
     "Am not embarrassed easily."
   ],
+  traits: {
+    A: "Agréabilité",
+    C: "Conscienciosité",
+    E: "Extraversion",
+    N: "Névrosisme",
+    O: "Ouverture à l'expérience"
+  },
   aspects: {
     o: ["Intellect", "Openness"],
     c: ["Industriousness", "Orderliness"],

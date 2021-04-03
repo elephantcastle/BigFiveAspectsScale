@@ -4,7 +4,8 @@ export default {
     title: "Big Five Persönlichkeitsmerkmale",
     retrievereport: "Sehen Sie Ihre Ergebnisse",
     subtitle: "Messen Sie deine Offenheit für Erfahrungen, Gewissenhaftigkeit, Extraversion, Verträglichkeit, Neurotizismus",
-    about: "About",
+    about: "Über",
+    policy: "Datenschutz",
     enteridtext: "Sie können die Ergebnisse durch das Eingeben Ihrer ID in das ID-Eingabefeld einsehen (z.B. 5febaa2cc9b7b116872e0cf2)",
   },
   answers: [
@@ -116,6 +117,13 @@ export default {
     "Am out for my own personal gain.",
     "Am not embarrassed easily."
   ],
+  traits: {
+    A: "Verträglichkeit",
+    C: "Gewissenhaftigkeit",
+    E: "Extraversion",
+    N: "Neurotizismus",
+    O: "Offenheit für Erfahrungen"
+  },
   aspects: {
     o: ["Intellect", "Openness"],
     c: ["Industriousness", "Orderliness"],

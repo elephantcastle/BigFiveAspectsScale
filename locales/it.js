@@ -5,6 +5,7 @@ export default {
     retrievereport: "Controlla la tua analisi",
     subtitle: "Misura il tuo livello di Apertura Mentale, Coscienziosità, Estroversione, Gradevolezza, Nevroticismo",
     about: "About",
+    policy: "Trattamento dei dati",
     enteridtext: "Immetti qui sotto l'id che hai ottenuto per vedere i risultati (per esempio 5febaa2cc9b7b116872e0cf2)"
   },
   answers: [
@@ -116,11 +117,18 @@ export default {
     "Am out for my own personal gain.",
     "Am not embarrassed easily."
   ],
+  traits: {
+    A: "Gradevolezza",
+    C: "Coscienziosità",
+    E: "Estroversione",
+    N: "Nevroticismo",
+    O: "Apertura mentale"
+  },
   aspects: {
     o: ["Intelligenza", "Creatività"],
     c: ["Industrosità", "Diligenza/Precisione"],
     e: ["Entusiasmo", "Assertività"],
     a: ["Compassione", "Cooperazione"],
-    n: ["Volatility", "Vulnerabilità"]
+    n: ["Volatilità emotiva", "Vulnerabilità"]
   }
 };
