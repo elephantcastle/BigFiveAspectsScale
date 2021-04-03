@@ -61,7 +61,7 @@ export default {
 
 <style>
 .title-chart {
-  margin: 10px auto;
+  margin: 0px auto;
   text-align: center;
 }
 .primary-chart > div {
@@ -76,7 +76,7 @@ export default {
 }
 .id-text {
   font-size: 18px;
-  margin: 10px 0 0px 0;
+  margin: 0 auto;
   user-select: text;
 }
 </style>
