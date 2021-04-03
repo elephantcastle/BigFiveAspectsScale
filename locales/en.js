@@ -5,7 +5,8 @@ export default {
     retrievereport: "See your report",
     subtitle: "Measure your Openness to Experience, Conscientiousness, Extraversion, Agreeableness, Neuroticism",
     about: "About",
-    policy: "Privacy Policy"
+    policy: "Privacy Policy",
+    enteridtext: "Please enter your test id below to check your results (i.e. 5febaa2cc9b7b116872e0cf2)"
   },
   answers: [
     "Very Inaccurate",
