@@ -21,12 +21,12 @@ import axios from "axios";
 const ismongoId = (value) => /^[a-f\d]{24}$/i.test(value);
 
 export default {
-
+  name: "retrieve",
   data: () => ({
     valid:true,
     id: null,
     idRules: [
-      (v) => !!v || "Name is required",
+      (v) => !!v || "Id is required",
       (v) => v && ismongoId(v) || "It must be a valid mongo Id",
     ],
   }),
@@ -35,15 +35,15 @@ export default {
     submit() {
       if (this.$refs.form.validate()) {
         const API =  process.env.NODE_ENV === "production"
-          ? "https://oceanbackendapi.herokuapp.com"
+          ? "https://bigfiveaspectsbackendapi.herokuapp.com"
           : "http://localhost:4000";
         axios
-          .get(`${API}/test/${this.id}` )
+          .get(`${API}/results/${this.id}` )
           .then((response) => {
-            this.$store.dispatch("updateResults", response.data.finalResult);
+            this.$store.dispatch("updateResults", response.data);
             setTimeout(() => {
                 this.$router.push({
-                  path: `/results/${response.data.info._id}`,
+                  path: `/results`,
                 });
             }, 1000);
           })

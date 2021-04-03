@@ -17,8 +17,24 @@ export const mutations = {
   setSex(state, sex) {
     state.sex = sex;
   },
+  setId(state, id) {
+    state._id = id;
+  },
+  setResults(state, results){
+    state.results = Json.parse(Json.stringify(results));
+  },
   calculateResults(state) {
     state.graphData = getGraphData(state.results)
+  }
+};
+
+export const actions = {
+  async updateResults({commit}, value) {
+    commit('setAge', value.age)
+    commit('setSex', value.sex)
+    commit('setId', value._id)
+    await commit('setResults', value.testdata)
+    await commit('calculateResults')
   }
 };
 
