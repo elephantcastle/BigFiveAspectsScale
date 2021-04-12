@@ -65,7 +65,7 @@ export const getGraphData = results => {
   results.forEach((element, index) => {
     const traitIndex = index % 10;
     traitsBreakdown[traitIndex] +=
-      index / 10 < scoreAdjustments[traitIndex] ? element : 5 - element;
+      index / 10 < scoreAdjustments[traitIndex] ? element + 1: 6 - element;
   });
   const traits = ["o", "c", "e", "a", "n"];
 
@@ -86,7 +86,6 @@ export const getGraphData = results => {
       traitsBreakdown.slice(5 + i, 5 + i + 1)[0]
     );
   });
-
   // Normalize the result based on N=189
   let normalDictionary = {
     traits: [],
