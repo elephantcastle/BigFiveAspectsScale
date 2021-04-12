@@ -1,6 +1,6 @@
 const normalData = {
   traits: [
-    { mean: 3.99, SD: 0.5 },
+    { mean: 3.99, SD: 0.50 },
     { mean: 3.21, SD: 0.63 },
     { mean: 3.67, SD: 0.56 },
     { mean: 3.77, SD: 0.51 },
@@ -20,7 +20,7 @@ const normalData = {
       { mean: 3.68, SD: 0.66 }
     ],
     a: [
-      { mean: 4.06, SD: 0.63 },
+      { mean: 4.06, SD: 0.60 },
       { mean: 3.48, SD: 0.64 }
     ],
     n: [
